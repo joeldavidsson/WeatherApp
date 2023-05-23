@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+body {
+    min-height: 100vh;   
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header img {
+    width: 125px;
+    height: 125px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: white;
+
+}
+
+main {
+    grid-area: main;
+    background-color: lightgreen;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightcoral;
+}
