@@ -73,18 +73,14 @@ function currentTimeDate() {
 
   let hour = currentTime.getHours();
   let min = currentTime.getMinutes();
-  let sec = currentTime.getSeconds();
   let year = currentTime.getFullYear();
   let day = currentTime.getDate();
   let month = currentTime.getMonth() + 1;
-  document.getElementById("dateTime").innerHTML = weekday + "<br>" + hour + ":" + min + ":" + sec + "<br>" + year + "/" + month + "/" + day;
+  document.getElementById("dateTime").innerHTML = weekday + "<br>" + hour + ":" + min "<br>" + year + "/" + month + "/" + day;
 }
 
 
 
 // set intervals for calling functions:
-// call currentTimeDate every second
-setInterval(currentTimeDate, 1000);
-
-//call halmstadWeather every 15 mins
-setInterval(halmstadWeather, 900000);
+// call currentTimeDate every minute
+setInterval(currentTimeDate, 60000);
