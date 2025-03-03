@@ -76,7 +76,7 @@ function currentTimeDate() {
   let year = currentTime.getFullYear();
   let day = currentTime.getDate();
   let month = currentTime.getMonth() + 1;
-  document.getElementById("dateTime").innerHTML = weekday + "<br>" + hour + ":" + min "<br>" + year + "/" + month + "/" + day;
+  document.getElementById("dateTime").innerHTML = weekday + "<br>" + hour + ":" + min + "<br>" + year + "/" + month + "/" + day;
 }
 
 
